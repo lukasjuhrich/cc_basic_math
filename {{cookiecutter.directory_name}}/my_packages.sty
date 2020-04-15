@@ -1,0 +1,46 @@
+\ProvidesPackage{my_packages}
+
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amsthm,amssymb,amsfonts,mathabx,mathrsfs}
+\usepackage[ngerman]{babel}
+% \usepackage{unicode-math}
+\usepackage[makeroom]{cancel}
+
+\usepackage{xargs}
+\usepackage[table]{xcolor}
+\usepackage[colorinlistoftodos,prependcaption,textsize=tiny]{todonotes}
+\usepackage[normalem]{ulem}
+\usepackage{hyperref}
+% \usepackage{cite}
+\usepackage{booktabs}
+% \rowcolors{1}{green}{pink}
+
+\usepackage{enumitem}
+\setlist[description]{font=\normalfont\itshape\textbullet\space\/}
+
+\usepackage{todonotes}
+\newsavebox\MBox{}
+\newcommand\Cline[2][red]{{\sbox\MBox{$#2$}%
+    \rlap{\usebox\MBox}\color{#1}\rule[-1.2\dp\MBox]{\wd\MBox}{0.5pt}}}
+
+\newtheorem{theorem}{Satz}%[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{coroll}[theorem]{Korollar}
+\newtheorem{obs}[theorem]{Beobachtung}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{rem}[theorem]{Anmerkung}
+\newtheorem{idea}[theorem]{Idee}
+
+\usepackage[style=numeric-comp]{biblatex}
+
+\usepackage{suffix}
+
+% \usepackage{fullpage} % Package to use full page
+% \usepackage{parskip} % Package to tweak paragraph skipping
+\usepackage{tikz} % Package for drawing
+\usepackage{tikz-cd}
+\usepackage{tkz-fct}
+\usepackage{graphicx}

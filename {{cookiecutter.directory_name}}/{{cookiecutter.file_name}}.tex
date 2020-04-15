@@ -1,0 +1,30 @@
+\documentclass[a4paper]{scrartcl}
+
+\usepackage{my_packages}
+\usepackage{my_math_commands}
+
+\title{ %
+{{cookiecutter.title}}%
+}
+\author{ %
+{{cookiecutter.author}}%
+}
+\date{\today}
+
+% \bibliography{bibfile}
+
+\begin{document}
+
+\maketitle
+
+\section*{Introduction}
+
+\end{document}
+
+{% if false and cookiecutter.shell_escape %}
+{# TODO introduce shell-escape here and in latexmkrc  #}
+%%% Local Variables:
+%%% mode: LaTeX
+%%% LaTeX-command: "latex -shell-escape"
+%%% End:
+{% endif %}

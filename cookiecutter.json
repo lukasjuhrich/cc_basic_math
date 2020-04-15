@@ -1,0 +1,10 @@
+{
+    "directory_name": "document",
+    "file_name": "document",
+    "language": ["en", "de"],
+    "title": "{{cookiecutter.file_name}}",
+    "author": "Lukas Juhrich",
+    "_copy_without_render": [
+        "*.sty"
+    ]
+}
